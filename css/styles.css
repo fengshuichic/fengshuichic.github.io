@@ -453,11 +453,14 @@ ul { list-style: none; }
 .legal {
   max-width: 760px;
   margin: 0 auto;
-  padding: var(--space-md) 0 var(--space-lg);
+  padding: 0 5% var(--space-lg);
 }
 .legal h2 {
   font-size: 1.3rem;
   margin: var(--space-md) 0 var(--space-xs);
+}
+.legal h2:first-child {
+  margin-top: 0;
 }
 .legal p {
   margin-bottom: var(--space-sm);
@@ -557,7 +560,17 @@ ul { list-style: none; }
   letter-spacing: 0.08em;
   margin-bottom: var(--space-sm);
 }
+.footer__contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 .footer__contact a {
+  color: rgba(255,255,255,.6);
+  font-size: 0.9rem;
+  transition: color var(--transition);
+}
+.footer__contact a:hover {
   color: var(--color-gold-light);
 }
 .footer__bottom {
