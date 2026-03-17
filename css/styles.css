@@ -375,7 +375,7 @@ ul { list-style: none; }
 .form-section {
   max-width: 680px;
   margin: 0 auto;
-  padding: var(--space-lg) 0;
+  padding: var(--space-lg) 5%;
 }
 .form-section p {
   text-align: center;
