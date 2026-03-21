@@ -291,6 +291,10 @@ ul { list-style: none; }
   transition: transform var(--transition), box-shadow var(--transition);
   border-top: 3px solid var(--color-gold);
 }
+.cards--quad {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
@@ -581,6 +585,12 @@ ul { list-style: none; }
 }
 
 /* ---------- Responsive ---------- */
+@media (min-width: 1024px) {
+  .cards--quad {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 @media (max-width: 900px) {
   .two-col,
   .about-grid {
@@ -634,7 +644,8 @@ ul { list-style: none; }
     width: 48px; height: 48px;
     font-size: 1.2rem;
   }
-  .cards {
+  .cards,
+  .cards.cards--quad {
     grid-template-columns: 1fr;
   }
 }
